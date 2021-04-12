@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGV" targetNamespace="http://tempuri.org/dsGV.xsd" xmlns:mstns="http://tempuri.org/dsGV.xsd" xmlns="http://tempuri.org/dsGV.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TN_CSDLPTConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TN_CSDLPTConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.THITN.Properties.Settings.GlobalReference.Default.TN_CSDLPTConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_DSGVChuaCoTaiKhoanTableAdapter" GeneratorDataComponentClassName="V_DSGVChuaCoTaiKhoanTableAdapter" Name="V_DSGVChuaCoTaiKhoan" UserDataComponentName="V_DSGVChuaCoTaiKhoanTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TN_CSDLPTConnectionString1 (Settings)" DbObjectName="TN_CSDLPT.dbo.V_DSGVChuaCoTaiKhoan" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MAGV, HOTEN FROM dbo.V_DSGVChuaCoTaiKhoan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MAGV" DataSetColumn="MAGV" />
+              <Mapping SourceColumn="HOTEN" DataSetColumn="HOTEN" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGV" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsGV" msprop:Generator_UserDSName="dsGV">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_DSGVChuaCoTaiKhoan" msprop:Generator_TableClassName="V_DSGVChuaCoTaiKhoanDataTable" msprop:Generator_TableVarName="tableV_DSGVChuaCoTaiKhoan" msprop:Generator_TablePropName="V_DSGVChuaCoTaiKhoan" msprop:Generator_RowDeletingName="V_DSGVChuaCoTaiKhoanRowDeleting" msprop:Generator_RowChangingName="V_DSGVChuaCoTaiKhoanRowChanging" msprop:Generator_RowEvHandlerName="V_DSGVChuaCoTaiKhoanRowChangeEventHandler" msprop:Generator_RowDeletedName="V_DSGVChuaCoTaiKhoanRowDeleted" msprop:Generator_UserTableName="V_DSGVChuaCoTaiKhoan" msprop:Generator_RowChangedName="V_DSGVChuaCoTaiKhoanRowChanged" msprop:Generator_RowEvArgName="V_DSGVChuaCoTaiKhoanRowChangeEvent" msprop:Generator_RowClassName="V_DSGVChuaCoTaiKhoanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MAGV" msprop:Generator_ColumnVarNameInTable="columnMAGV" msprop:Generator_ColumnPropNameInRow="MAGV" msprop:Generator_ColumnPropNameInTable="MAGVColumn" msprop:Generator_UserColumnName="MAGV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HOTEN" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHOTEN" msprop:Generator_ColumnPropNameInRow="HOTEN" msprop:Generator_ColumnPropNameInTable="HOTENColumn" msprop:Generator_UserColumnName="HOTEN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_DSGVChuaCoTaiKhoan" />
+      <xs:field xpath="mstns:MAGV" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
